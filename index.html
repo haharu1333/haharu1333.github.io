@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>텍스트 RPG</title>
+</head>
+<body>
+  <div class="app">
+    <p style="background-color:bisque;text-align:center;font-weight: 800;font-size: 1.2em;height: 100;">심심해서 만든 자동 텍스트 RPG V.1.0</p>
+    <div class="saveAndLoad">
+    <button onclick="save()">저장하기</button>
+    <button onclick="load()">불러오기</button>
+    </div>
+    <a href="javascript:void(0);" class="hodu" onclick="add()"><img src="https://lh5.googleusercontent.com/proxy/ZF4TCTrYan0udXw41edd49ptINEZiSQI5u6b3bMCAAfdIHMD_i5sOPuPMkL8-MukHYY3gCEbcqxI-DX1y850T71l1SgdM6xzGykSLNAq3fcS_f7Kd4iCyDisAXPiqQ-zyG2KGWHc9hh-tS7esIh9j7ABYSRxGlHzxqUyQRMBVr3_ViuYcIgCH8yvwhhOHCIAbDj57Ryb3rjc94iAMMzRAIKMoVSVXg"></a>
+    <div class="title-score">
+      <button class="friendbutton" onclick="location.href='friend.html'">동료</button>
+      <input id="hoduCount" class="score" type="text" value="0" disabled>
+      <button class="friendbutton" onclick="location.href='combat.html'">전투</button>
+    </div>
+    <p class="title">능력치 업그레이드</p>
+    <div class="store">
+      <div class="carrotSell">
+        <div class="store-block">
+          <p class="title-title-font">[ 공격력 ]</p>
+          <p id="needpoint-1" class="title-font">요구 포인트 : 10</p>
+          <p id="nowAttack" class="title-font">공격력 : +0</p>
+          <button onclick="buyAttack()">업글!</button>
+        </div>
+        <div class="store-block">
+          <p class="title-title-font">[ 방어력 ]</p>
+          <p id="needpoint-2" class="title-font">요구 포인트 : 10</p>
+          <p id="nowResis" class="title-font">방어력 : +0</p>
+          <button onclick="buyResis()">업글!</button>
+        </div>
+        <div class="store-block">
+          <p class="title-title-font">[ 치명타 확률 ]</p>
+          <p id="needpoint-3" class="title-font">요구 포인트 : 10</p>
+          <p id="nowCritChance" class="title-font">치명타 확률 : +0%</p>
+          <button onclick="buyGold()">업글!</button>
+        </div>
+        <div class="store-block">
+          <p class="title-title-font">[ 치명타 피해 ]</p>
+          <p id="needpoint-4" class="title-font">요구 포인트 : 10</p>
+          <p id="nowCritDamage" class="title-font">치명타 피해 : +0%</p>
+          <button onclick="buyGold()">업글!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
