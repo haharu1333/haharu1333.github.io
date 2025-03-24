@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.app1{
+  /*background-image:url('https://e1.pxfuel.com/desktop-wallpaper/68/523/desktop-wallpaper-your-name-beautiful-sky-meteor-anime-3840x2160-your-name-phone.jpg');*/
+  background-image:url('../배경.gif');
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  background-position:center;
+  width: 400px;
+  height: 819.1px;
+  margin: 0 auto;
+}
+.btn-1 {
+  text-align: center;
+  position: relative;
+  top: 70%;
+}
+
+.simal-1 {
+  text-align: center;
+  position: relative;
+  top: 30%;
+}
+
+body {
+    overflow-y: overlay; /* 반드시 overlay 처리 */
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.15);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: 4px solid transparent;
+    box-shadow: inset 6px 6px 0 rgba(34, 34, 34, 0.3);
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
